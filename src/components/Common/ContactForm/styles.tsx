@@ -1,63 +1,98 @@
-import PhoneIcon from "@mui/icons-material/Phone";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
-import styled from "styled-components";
+import { Button, TextField } from '@mui/material'
+import styled from 'styled-components'
 
-export const MainContainer = styled.div`
-  padding: 1rem 4rem;
-`;
+export const MainLayout = styled.div`
+  padding: 6rem 14rem;
+`
 
-export const InnerContainer = styled.div`
+export const InnerLayout = styled.div`
+  border-radius: 0.3125rem;
   background: #1e40af;
-  width: 80%;
-  margin: 0 auto;
-`;
-export const HeadingText = styled.h2`
-  color: #fff;
-  font-size: 42px;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+`
+
+export const InfoContainer = styled.div`
+  display: inherit;
+  flex-direction: column;
+  width: 40%;
+  gap: 2rem;
+`
+
+export const ContactUsText = styled.h1`
+  color: #ffffff;
+  font-size: 2.625rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  padding: 1rem 2rem;
-`;
+  // padding-bottom: 3rem;
+`
 
-export const RightContainer = styled.div`
+export const ContactInfo = styled.div`
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 32px;
-  padding: 1rem 3rem;
-`;
+  align-item: center;
+  gap: 1.5rem;
+`
 
-export const AddressContainer = styled.div`
+export const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 32px;
-`;
-export const InfoText = styled.p`
-  color: #fff;
-  font-size: 18px;
+`
+
+export const TitleInfoText = styled.p`
+  color: #ffffff;
+  font-size: 0.875rem;
   font-style: normal;
-  font-weight: 400;
-  line-height: 30px;
+  font-weight: 600;
+  line-height: 1.25rem;
   margin: 0;
-`;
+`
 
-export const StyledIconContainer = styled.div`
-  width: 40px;
-  height: 40px;
-  background-color: rgba(255, 255, 255, 0.41);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-`;
+export const ValueInfoText = styled.p`
+  margin: 0;
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.25rem;
+  margin: 0;
+`
 
-export const StyledIcon = styled(PhoneIcon)`
-  font-size: 24px;
-  color: #ffffff;
-`;
-export const LocationIcon = styled(LocationOnIcon)`
-  font-size: 24px;
-  color: #ffffff;
-`;
+export const IconWrapper = styled.div``
+
+export const FormContainer = styled.div`
+  padding: 2rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 1rem;
+  background-color: #ffffff;
+  border-radius: 0.625rem;
+  width: 60%;
+`
+
+export const NameContainer = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+`
+
+export const ButtonHolder = styled.div`
+  display: grid;
+  padding-top: 3rem;
+`
+
+export const MuiButton = styled(Button)`
+  padding: 1rem 1.25rem;
+  border-radius: 0.625rem;
+  background: #ff8181;
+`
+
+export const EmailInputHolder = styled.div`
+  display: grid;
+`
+
+export const MessageInputHolder = styled.div`
+  display: grid;
+`
