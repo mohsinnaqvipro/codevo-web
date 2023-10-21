@@ -64,9 +64,6 @@ export const IconWrapper = styled.div``
 
 export const FormContainer = styled.div`
   padding: 2rem 1rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-row-gap: 1rem;
   background-color: #ffffff;
   border-radius: 0.625rem;
   width: 60%;
