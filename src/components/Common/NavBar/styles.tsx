@@ -3,13 +3,14 @@ import { Button } from "@mui/material";
 import styled from "styled-components";
 
 export const MainLayout = styled.div`
-  padding: 1rem 4rem;
+  background-color: #ffffff;
 `;
 
 export const InnerLayout = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 1rem 4rem;
 `;
 
 export const ImageHolder = styled.div``;
