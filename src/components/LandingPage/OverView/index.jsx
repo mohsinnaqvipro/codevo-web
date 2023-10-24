@@ -3,7 +3,7 @@
 import ViewCard from "./ViewCard";
 import ViewImage from "@/assets/images/Idea1.png";
 import ViewImage1 from "@/assets/images/Idea2.png";
-import ViewImage2 from "@/assets/images/ideaimage0.png";
+import ViewImage2 from "@/assets/images/Idea3.png";
 import { OverViewData } from "@/utils/Constants/constants";
 import {
   MainLayout,
@@ -37,9 +37,10 @@ const OverView = () => {
           <StyledImage src={ViewImage} alt="" />
         </ImageContainer>
       </CardLayout>
+
       <CardLayout>
         <ImageContainer>
-          <StyledImage src={ViewImage1} alt="" />
+          <StyledImage src={ViewImage2} alt="" />
         </ImageContainer>
         <ViewCard
           srNo={OverViewData[1].srNo}
@@ -47,6 +48,7 @@ const OverView = () => {
           details={OverViewData[1].details}
         />
       </CardLayout>
+
       <CardLayout>
         <ViewCard
           srNo={OverViewData[2].srNo}

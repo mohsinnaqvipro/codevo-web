@@ -34,6 +34,8 @@ export const CardLayout = styled.div`
   display: flex;
   gap: 4rem;
 `;
-export const ImageContainer = styled.div``;
+export const ImageContainer = styled.div`
+  width: 50%;
+`;
 
 export const StyledImage = styled(Image)``;
