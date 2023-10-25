@@ -1,18 +1,18 @@
-'use client'
-import React from 'react'
+"use client";
+import React from "react";
 
-import { Controller } from 'react-hook-form'
-import { InputContainer, InputLabel, StyledInput, ErrorSpan } from './styles'
+import { Controller } from "react-hook-form";
+import { InputContainer, InputLabel, StyledInput, ErrorSpan } from "./styles";
 
 interface MyComponentProps {
-  name: string
-  control: any
-  size: string
-  multiline?: boolean
-  variant: string
-  label: string
-  errors: any
-  rules?: object
+  name: string;
+  control: any;
+  size: string;
+  multiline?: boolean;
+  variant: string;
+  label: string;
+  errors: any;
+  rules?: object;
 }
 
 const InputField: React.FC<MyComponentProps> = ({
@@ -23,7 +23,7 @@ const InputField: React.FC<MyComponentProps> = ({
   size,
   rules,
   variant,
-  errors
+  errors,
 }) => {
   return (
     <>
@@ -38,7 +38,7 @@ const InputField: React.FC<MyComponentProps> = ({
               size={size}
               multiline={multiline}
               rows={2}
-              id='outlined-basic'
+              id="outlined-basic"
               variant={variant}
               {...field}
             />
@@ -47,7 +47,7 @@ const InputField: React.FC<MyComponentProps> = ({
         )}
       />
     </>
-  )
-}
+  );
+};
 
-export default InputField
+export default InputField;

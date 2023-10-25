@@ -14,11 +14,11 @@ import ArrowUp from "@/assets/images/arrow-up.png";
 import ArrowDown from "@/assets/images/arrow-down.png";
 
 export const NavItems = [
-  { label: "Home", url: "/Home" },
-  { label: "About US", url: "/" },
-  { label: "Services", url: "/" },
-  { label: "Portfolio", url: "/" },
-  { label: "Blogs", url: "/" },
+  { label: "Home", url: "/home" },
+  { label: "About US", url: "/aboutus" },
+  { label: "Services", url: "/services" },
+  { label: "Portfolio", url: "/portfolio" },
+  { label: "Blogs", url: "/blogs" },
 ];
 
 export const FooterOptions = [

@@ -28,6 +28,15 @@ export const StyledLink = styled(Link)`
   line-height: 0.9375rem;
   letter-spacing: -0.00125rem;
   text-decoration: none;
+
+  &:hover {
+    color: #1e40af;
+  }
+  ${(props) =>
+    props.active &&
+    `
+    color: #1e40af; 
+  `}
 `;
 
 export const StyledButton = styled(Button)`
