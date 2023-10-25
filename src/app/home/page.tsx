@@ -1,13 +1,16 @@
 "use client";
 
 import React from "react";
+import Hero from "@/components/Portfolio/Hero";
+import OurCreativeWork from "@/components/Portfolio/OurCreativeWork";
 import RootLayout from "@/Layouts/RootLayout";
 
 const HomePage = () => {
   return (
     <>
       <RootLayout>
-        <h1> This is home Page</h1>
+        <Hero />
+        <OurCreativeWork />
       </RootLayout>
     </>
   );
