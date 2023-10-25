@@ -1,40 +1,45 @@
 import React from "react";
 import { PortfolioCardData } from "@/utils/Constants/porfolioConstants";
-import PortfolioCardScroll from "@/assets/images/PortfolioCardScroll.png";
+import PortfolioCardImage1 from "@/assets/images/PortfolioCardImage1.png";
+import Carousel from "react-material-ui-carousel";
+
 import {
   MainLayout,
+  InnerLayout,
+  CardHolder,
   ImageHolder,
   StyledImage,
-  CardDetails,
-  CardDiscription,
-  CardTitle,
-  ButtonWrapper,
+  DetailContainer,
+  TitleHanding,
+  CardText,
   StyledButton,
-  InnerLayout,
-  ScrollWrapper,
 } from "./styles";
 
-const PortfolioCard = () => {
+const PortfolioCard = ({ items }: any) => {
   return (
-    <MainLayout>
-      <ImageHolder>
-        {PortfolioCardData.map((item, index) => (
-          <InnerLayout key={index}>
-            <StyledImage src={item.imageUrl} alt="" />
-            <CardDetails>
-              <CardTitle>{item.title}</CardTitle>
-              <CardDiscription>{item.dicription}</CardDiscription>
-            </CardDetails>
-            <ButtonWrapper>
-              <StyledButton>{`View Details`}</StyledButton>
-            </ButtonWrapper>
-          </InnerLayout>
-        ))}
-      </ImageHolder>
-      <ScrollWrapper>
-        <StyledImage src={PortfolioCardScroll} alt="" />
-      </ScrollWrapper>
-    </MainLayout>
+    <>
+      <MainLayout>
+        <InnerLayout>
+          {PortfolioCardData.map((item, index) => (
+            <>
+              <CardHolder key={index}>
+                <ImageHolder>
+                  <StyledImage src={item.data.imageUrl} alt="" />
+                </ImageHolder>
+                <DetailContainer>
+                  <TitleHanding>{item.data.title}</TitleHanding>
+                  <CardText>{item.data.dicription}</CardText>
+                  <StyledButton
+                    variant="contained"
+                    size="small"
+                  >{`View Details`}</StyledButton>
+                </DetailContainer>
+              </CardHolder>
+            </>
+          ))}
+        </InnerLayout>
+      </MainLayout>
+    </>
   );
 };
 

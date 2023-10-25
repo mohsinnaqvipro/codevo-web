@@ -1,12 +1,23 @@
 import React from "react";
-import { InnerLayout, MainLayout } from "./styles";
-import PortfolioCard from "./PortfolioCard";
 
+import Carousel from "react-material-ui-carousel";
+import PortfolioCard from "./PortfolioCard";
+import { PortfolioCardData } from "@/utils/Constants/porfolioConstants";
+
+import { InnerLayout, MainLayout, WorkHeading, WorkSpan } from "./styles";
 const OurCreativeWork = () => {
   return (
     <MainLayout>
-      <InnerLayout>{`Our Creative Work`}</InnerLayout>
-      <PortfolioCard />
+      <InnerLayout>
+        <WorkHeading>
+          {`Our`} <WorkSpan>{`Creative Work`}</WorkSpan>{" "}
+        </WorkHeading>
+      </InnerLayout>
+      <Carousel>
+        {PortfolioCardData.map((item, index) => (
+          <PortfolioCard key={index} items={item} />
+        ))}
+      </Carousel>
     </MainLayout>
   );
 };
