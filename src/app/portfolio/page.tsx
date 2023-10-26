@@ -15,8 +15,8 @@ const PortfolioPage = () => {
       <RootLayout>
         <Hero />
         <OurCreativeWork />
-        <Project />
         <TechStack />
+        <Project />
         <TrustedClients />
       </RootLayout>
     </>
