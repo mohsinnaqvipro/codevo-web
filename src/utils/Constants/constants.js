@@ -9,7 +9,6 @@ import ClientImage2 from "@/assets/images/Client2.png";
 import ClientImage3 from "@/assets/images/Client3.png";
 import PhoneIcon from "@/assets/icons/phone";
 import LocationIcon from "@/assets/icons/location";
-<<<<<<< HEAD
 
 import ArrowUp from "@/assets/images/arrow-up.png";
 import ArrowDown from "@/assets/images/arrow-down.png";
@@ -20,15 +19,6 @@ export const NavItems = [
   { label: "Services", url: "/services" },
   { label: "Portfolio", url: "/portfolio" },
   { label: "Blogs", url: "/blogs" },
-=======
-
-export const NavItems = [
-  { label: "Home", url: "/Home" },
-  { label: "About US", url: "/" },
-  { label: "Services", url: "/" },
-  { label: "Portfolio", url: "/" },
-  { label: "Blogs", url: "/" },
->>>>>>> feat/portfolio
 ];
 
 export const FooterOptions = [
@@ -134,7 +124,6 @@ export const firstNameValidationRules = {
 export const lastNamenameValidationRules = {
   required: "Last Name is required",
 };
-<<<<<<< HEAD
 
 export const workData = [
   {
@@ -181,5 +170,3 @@ export const OverViewData = [
     details: `Whether you're launching a new brand, upgrading your website, boost your online performance, we're here to guide you. Join us in shaping the future of your digital journey." `,
   },
 ];
-=======
->>>>>>> feat/portfolio
