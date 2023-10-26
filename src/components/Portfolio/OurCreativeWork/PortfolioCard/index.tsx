@@ -24,11 +24,11 @@ const PortfolioCard = ({ items }: any) => {
             <>
               <CardHolder key={index}>
                 <ImageHolder>
-                  <StyledImage src={item.data.imageUrl} alt="" />
+                  <StyledImage src={item.imageUrl} alt="" />
                 </ImageHolder>
                 <DetailContainer>
-                  <TitleHanding>{item.data.title}</TitleHanding>
-                  <CardText>{item.data.dicription}</CardText>
+                  <TitleHanding>{item.title}</TitleHanding>
+                  <CardText>{item.dicription}</CardText>
                   <StyledButton
                     variant="contained"
                     size="small"

@@ -6,6 +6,8 @@ import { PortfolioCardData } from "@/utils/Constants/porfolioConstants";
 
 import { InnerLayout, MainLayout, WorkHeading, WorkSpan } from "./styles";
 const OurCreativeWork = () => {
+  const cardGroups = [];
+
   return (
     <MainLayout>
       <InnerLayout>
@@ -13,7 +15,7 @@ const OurCreativeWork = () => {
           {`Our`} <WorkSpan>{`Creative Work`}</WorkSpan>{" "}
         </WorkHeading>
       </InnerLayout>
-      <Carousel>
+      <Carousel animation="slide">
         {PortfolioCardData.map((item, index) => (
           <PortfolioCard key={index} items={item} />
         ))}
