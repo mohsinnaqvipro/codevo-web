@@ -1,8 +1,14 @@
 import Image from "next/image";
 import styled from "styled-components";
 
+const mobileBreakpoint = "768px";
+
 export const MainLayout = styled.div`
   padding: 1rem 4rem;
+
+  @media (max-width: ${mobileBreakpoint}) {
+    padding: 1rem;
+  }
 `;
 
 export const InnerLayout = styled.div`
@@ -10,6 +16,9 @@ export const InnerLayout = styled.div`
   display: flex;
   align-items: center;
   margin: 0 auto;
+  @media (max-width: ${mobileBreakpoint}) {
+    width: 100%;
+  }
 `;
 
 export const ViewHeading = styled.h1`
@@ -19,6 +28,10 @@ export const ViewHeading = styled.h1`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+
+  @media (max-width: ${mobileBreakpoint}) {
+    font-size: 28px;
+  }
 `;
 
 export const ViewSpan = styled.span`
@@ -27,15 +40,28 @@ export const ViewSpan = styled.span`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  @media (max-width: ${mobileBreakpoint}) {
+    font-size: 28px;
+  }
 `;
 
 export const CardLayout = styled.div`
   padding: 1rem 4rem;
   display: flex;
   gap: 4rem;
+  @media (max-width: ${mobileBreakpoint}) {
+    width: 100%;
+    flex-direction: column;
+    padding: 1rem;
+  }
 `;
 export const ImageContainer = styled.div`
   width: 50%;
+  @media (max-width: ${mobileBreakpoint}) {
+    width: 100%;
+  }
 `;
 
-export const StyledImage = styled(Image)``;
+export const StyledImage = styled(Image)`
+  width: 100%;
+`;

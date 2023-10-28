@@ -105,7 +105,7 @@ export const ContactData = [
   {
     icon: <PhoneIcon />,
     title: "Address",
-    value: "607 Q - Block Johar Town Lahore Punjab Pakistan",
+    value: "607 Q - Block Johar Town Lahore, Punjab Pakistan",
   },
 ];
 

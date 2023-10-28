@@ -1,6 +1,6 @@
-'use client'
+"use client";
 
-import InputField from './InputField'
+import InputField from "./InputField";
 import {
   MainLayout,
   InnerLayout,
@@ -16,26 +16,26 @@ import {
   MuiButton,
   ButtonHolder,
   EmailInputHolder,
-  MessageInputHolder
-} from './styles'
-import { useForm } from 'react-hook-form'
+  MessageInputHolder,
+} from "./styles";
+import { useForm } from "react-hook-form";
 import {
   ContactData,
   emailValidationRules,
   firstNameValidationRules,
-  lastNamenameValidationRules
-} from '@/utils/Constants/constants'
+  lastNamenameValidationRules,
+} from "@/utils/Constants/constants";
 
 const ContactForm = () => {
   const {
     control,
     handleSubmit,
-    formState: { errors }
-  } = useForm()
+    formState: { errors },
+  } = useForm();
 
   const onSubmit = (data: any) => {
-    console.log('data: ', data)
-  }
+    console.log("data: ", data);
+  };
   return (
     <MainLayout>
       <InnerLayout>
@@ -55,58 +55,58 @@ const ContactForm = () => {
           <form onSubmit={handleSubmit(onSubmit)}>
             <NameContainer>
               <InputField
-                name='firstName'
-                label='First Name*'
+                name="firstName"
+                label="First Name*"
                 control={control}
                 rules={firstNameValidationRules}
-                size='small'
-                variant='outlined'
+                size="small"
+                variant="outlined"
                 errors={errors}
               />
               <InputField
-                name='lastName'
-                label='Last Name*'
+                name="lastName"
+                label="Last Name*"
                 rules={lastNamenameValidationRules}
                 control={control}
-                size='small'
-                variant='outlined'
+                size="small"
+                variant="outlined"
                 errors={errors}
               />
             </NameContainer>
             <EmailInputHolder>
               <InputField
-                name='Email'
-                label='Email*'
+                name="Email"
+                label="Email*"
                 rules={emailValidationRules}
                 control={control}
-                size='small'
-                variant='outlined'
+                size="small"
+                variant="outlined"
                 errors={errors}
               />
             </EmailInputHolder>
             <MessageInputHolder>
               <InputField
-                name='yourMessage'
-                label='Your Message'
+                name="yourMessage"
+                label="Your Message"
                 control={control}
                 multiline={true}
-                size='small'
-                variant='outlined'
+                size="small"
+                variant="outlined"
                 errors={errors}
               />
             </MessageInputHolder>
             <ButtonHolder>
               <MuiButton
-                type='submit'
+                type="submit"
                 // htmlType='submit'
-                variant='contained'
+                variant="contained"
               >{`Send Message`}</MuiButton>
             </ButtonHolder>
           </form>
         </FormContainer>
       </InnerLayout>
     </MainLayout>
-  )
-}
+  );
+};
 
-export default ContactForm
+export default ContactForm;

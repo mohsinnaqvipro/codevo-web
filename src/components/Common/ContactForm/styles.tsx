@@ -1,8 +1,13 @@
 import { Button, TextField } from "@mui/material";
 import styled from "styled-components";
 
+const mobileBreakpoint = "768px";
+
 export const MainLayout = styled.div`
   padding: 6rem 14rem;
+  @media (max-width: ${mobileBreakpoint}) {
+    padding: 2rem 0rem;
+  }
 `;
 
 export const InnerLayout = styled.div`
@@ -10,8 +15,12 @@ export const InnerLayout = styled.div`
   background: #1e40af;
   padding: 1rem 2rem;
   display: flex;
-  align-items: center;
   gap: 1rem;
+  @media (max-width: ${mobileBreakpoint}) {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
 `;
 
 export const InfoContainer = styled.div`
@@ -19,21 +28,29 @@ export const InfoContainer = styled.div`
   flex-direction: column;
   width: 40%;
   gap: 2rem;
+  @media (max-width: ${mobileBreakpoint}) {
+    width: 100%;
+  }
 `;
 
 export const ContactUsText = styled.h1`
   color: #ffffff;
-  font-size: 2.625rem;
+  font-size: 42px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  // padding-bottom: 3rem;
+  @media (max-width: ${mobileBreakpoint}) {
+    font-size: 28px;
+  }
 `;
 
 export const ContactInfo = styled.div`
   display: flex;
-  align-item: center;
   gap: 1.5rem;
+  @media (max-width: ${mobileBreakpoint}) {
+    flex-direction: column;
+    text-align: center;
+  }
 `;
 
 export const TextWrapper = styled.div`
@@ -72,12 +89,19 @@ export const FormContainer = styled.div`
   border: 1px solid #eee;
   border-radius: 10px;
   box-shadow: 0px 4px 60px 0px rgba(0, 0, 0, 0.08);
+  @media (max-width: ${mobileBreakpoint}) {
+    width: 100%;
+    padding: 0.5rem;
+  }
 `;
 
 export const NameContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+  @media (max-width: ${mobileBreakpoint}) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const ButtonHolder = styled.div`
