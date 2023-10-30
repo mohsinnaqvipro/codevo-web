@@ -2,7 +2,9 @@ import styled from "styled-components";
 import Image from "next/image";
 import { Button } from "@mui/material";
 
-export const MainLayout = styled.div``;
+export const MainLayout = styled.div`
+  padding: 1rem 4rem;
+`;
 export const InnerLayout = styled.div`
   display: flex;
   flex-direction: row;

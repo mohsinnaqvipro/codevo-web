@@ -94,6 +94,6 @@ export const StyledButton = styled(Button)`
   background: #1e40af;
   width: 100%;
   @media (max-width: ${mobileBreakpoint}) {
-    width: 50%;
+    width: 30%;
   }
 `;

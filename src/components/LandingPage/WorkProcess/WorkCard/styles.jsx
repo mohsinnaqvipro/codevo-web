@@ -5,26 +5,25 @@ const mobileBreakpoint = "768px";
 
 export const MainLayout = styled.div`
   display: flex;
-  flex-direction: row;
   padding: 1rem;
-  gap: 1rem;
 
   @media (max-width: ${mobileBreakpoint}) {
     flex-direction: column;
+    gap: 2rem;
   }
 `;
 
 export const InnerLayout = styled.div`
-  flex-direction: row;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
   max-width: 30%;
-  justify-content: center;
+  text-align: center;
+
   @media (max-width: ${mobileBreakpoint}) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    text-align: center;
     max-width: 100%;
+    justify-content: center;
   }
 `;
 

@@ -7,7 +7,6 @@ import {
   InnerLayout,
   HeroHeading,
   HeroText,
-  ButtonContinaer,
   HeroButton,
 } from "./styles";
 
@@ -17,12 +16,7 @@ const Hero = () => {
       <InnerLayout>
         <HeroHeading>{`Elevating Ideas to Reality`}</HeroHeading>
         <HeroText>{` We take responsibility for building custom software solutions that caters for automation of your business processes and improve efficiency.`}</HeroText>
-        <ButtonContinaer>
-          <HeroButton
-            variant="outlined"
-            size="small"
-          >{`Book a Demo`}</HeroButton>
-        </ButtonContinaer>
+        <HeroButton variant="outlined" size="small">{`Book a Demo`}</HeroButton>
       </InnerLayout>
     </MainLayout>
   );

@@ -1,10 +1,10 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Logo from "@/assets/images/logo.png";
 import { NavItems } from "@/utils/Constants/constants";
-
+import MenuIcon from "@mui/icons-material/Menu";
 import { usePathname, useRouter } from "next/navigation";
 
 import {
@@ -14,19 +14,24 @@ import {
   NavContainer,
   StyledLink,
   StyledButton,
+  IconContainer,
 } from "./styles";
 
 const NavBar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const router = useRouter();
   const pathName = usePathname();
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
   return (
     <MainLayout>
       <InnerLayout>
         <ImageHolder>
           <Image src={Logo} alt=""></Image>
         </ImageHolder>
-        <NavContainer>
+        <NavContainer style={{ display: isMenuOpen ? "flex" : "none" }}>
           {NavItems.map((item, index) => (
             <StyledLink
               key={index}
@@ -41,6 +46,9 @@ const NavBar = () => {
             onClick={() => router.push("/contactus")}
           >{`Contact Us`}</StyledButton>
         </NavContainer>
+        <IconContainer onClick={toggleMenu}>
+          <MenuIcon />
+        </IconContainer>
       </InnerLayout>
     </MainLayout>
   );

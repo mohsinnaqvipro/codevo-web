@@ -21,7 +21,7 @@ const PortfolioCard = ({ items }: any) => {
       <MainLayout>
         <InnerLayout>
           {PortfolioCardData.map((item, index) => (
-            <>
+            <div>
               <CardHolder key={index}>
                 <ImageHolder>
                   <StyledImage src={item.imageUrl} alt="" />
@@ -35,7 +35,7 @@ const PortfolioCard = ({ items }: any) => {
                   >{`View Details`}</StyledButton>
                 </DetailContainer>
               </CardHolder>
-            </>
+            </div>
           ))}
         </InnerLayout>
       </MainLayout>

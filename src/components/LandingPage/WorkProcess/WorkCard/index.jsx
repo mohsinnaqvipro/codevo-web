@@ -18,7 +18,7 @@ const WorkCard = () => {
     <MainLayout>
       {workData.map((item, index) => (
         <>
-          <InnerLayout>
+          <InnerLayout key={index}>
             <CricleDiv>
               <NumberSpan>{item.sirNo}</NumberSpan>
             </CricleDiv>

@@ -10,10 +10,10 @@ export const PortfolioCardData = [
       "Our future-ready workforce leverages cutting-edge technologies to provide exceptional products",
   },
   {
-    imageUrl: PortfolioCardImage1,
-    title: "FINTECH",
+    imageUrl: PortfolioCardImage2,
+    title: "LIVE.LY",
     dicription:
-      "Our future-ready workforce leverages cutting-edge technologies to provide exceptional products",
+      "Live.ly helps you take your streaming experience to the next level by helping you stream to different platforms",
   },
 
   {
