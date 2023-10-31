@@ -12,6 +12,13 @@ import LocationIcon from "@/assets/icons/location";
 
 import ArrowUp from "@/assets/images/arrow-up.png";
 import ArrowDown from "@/assets/images/arrow-down.png";
+import BlogCardImage1 from "@/assets/images/BlogCard1.png";
+import BlogCardImage2 from "@/assets/images/BlogCard2.png";
+import BlogCardImage3 from "@/assets/images/BlogCard3.png";
+import BlogCardImage4 from "@/assets/images/BlogCard4.png";
+import BlogCardImage5 from "@/assets/images/BlogCard5.png";
+
+// import LocationIcon from "@/assets/icons/location";
 
 export const NavItems = [
   { label: "Home", url: "/home" },
@@ -168,5 +175,39 @@ export const OverViewData = [
     srNo: "03",
     title: "Your Journey to Online Excellence ",
     details: `Whether you're launching a new brand, upgrading your website, boost your online performance, we're here to guide you. Join us in shaping the future of your digital journey." `,
+  },
+];
+
+export const BlogCardData = [
+  {
+    imageUrl: BlogCardImage1,
+    title:
+      "Visited Doesoen Sirap Coffee, The Producer of Robusta in Central Java",
+    date: "4 Min . August 19, 2022",
+  },
+  {
+    imageUrl: BlogCardImage2,
+    title: "Cold Brew Coffee, How to Drink Cold Coffee is More Enjoyable",
+    date: "4 Min . August 19, 2022",
+  },
+  {
+    imageUrl: BlogCardImage3,
+    title: "Meet Coffee Tonic, the Sensation of Drinking Coffee-Flavored Soda",
+    date: "4 Min . August 19, 2022",
+  },
+  {
+    imageUrl: BlogCardImage4,
+    title: "Workshop Coffee Sharing Session",
+    date: "4 Min . August 19, 2022",
+  },
+  {
+    imageUrl: BlogCardImage5,
+    title: "Workshop Coffee Brewing",
+    date: "4 Min . August 19, 2022",
+  },
+  {
+    imageUrl: BlogCardImage5,
+    title: "Workshop Coffee Brewing",
+    date: "4 Min . August 19, 2022",
   },
 ];

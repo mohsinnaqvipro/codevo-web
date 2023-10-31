@@ -92,8 +92,9 @@ export const StyledInputField = styled(TextField)``;
 
 export const StyledButton = styled(Button)`
   background: #1e40af;
-  width: 100%;
+  padding: 1rem;
+  width: 30%;
   @media (max-width: ${mobileBreakpoint}) {
-    width: 30%;
+    width: 100%;
   }
 `;

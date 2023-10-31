@@ -2,12 +2,17 @@
 
 import React from "react";
 import RootLayout from "@/Layouts/RootLayout";
+import BlogHero from "@/components/Blog/BlogHero";
+import LatestBlog from "@/components/Blog/latestBlog";
+import BlogCard from "@/components/Blog/BlogCard";
 
 const BlogsPage = () => {
   return (
     <>
       <RootLayout>
-        <h2>Blogs Page</h2>
+        <BlogHero />
+        <LatestBlog />
+        <BlogCard />
       </RootLayout>
     </>
   );

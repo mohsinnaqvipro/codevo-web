@@ -32,8 +32,7 @@ export const NavContainer = styled.div`
   gap: 2rem;
 
   @media (max-width: ${mobileBreakpoint}) {
-    display: flex;
-    flex-wrap: wrap;
+    display: none;
     width: 100%;
   }
 `;

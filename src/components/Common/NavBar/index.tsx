@@ -31,7 +31,7 @@ const NavBar = () => {
         <ImageHolder>
           <Image src={Logo} alt=""></Image>
         </ImageHolder>
-        <NavContainer style={{ display: isMenuOpen ? "flex" : "none" }}>
+        <NavContainer>
           {NavItems.map((item, index) => (
             <StyledLink
               key={index}
