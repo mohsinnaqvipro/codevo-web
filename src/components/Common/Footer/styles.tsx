@@ -92,7 +92,7 @@ export const StyledInputField = styled(TextField)``;
 
 export const StyledButton = styled(Button)`
   background: #1e40af;
-  padding: 1rem;
+  padding: 0.5rem 3rem;
   width: 30%;
   @media (max-width: ${mobileBreakpoint}) {
     width: 100%;

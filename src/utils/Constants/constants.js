@@ -42,11 +42,11 @@ export const FooterOptions = [
   {
     title: "Company",
     options: [
-      { label: "Home", url: "/" },
-      { label: "About US", url: "/" },
-      { label: "Services", url: "/" },
-      { label: "Portfolio", url: "/" },
-      { label: "Blogs", url: "/" },
+      { label: "Home", url: "/home" },
+      { label: "About US", url: "/aboutus" },
+      { label: "Services", url: "/services" },
+      { label: "Portfolio", url: "/portfolio" },
+      { label: "Blogs", url: "/blogs" },
     ],
   },
   {
@@ -73,9 +73,6 @@ export const ImageContent = [
   },
   {
     imageUrl: TrustedClientImage4,
-  },
-  {
-    imageUrl: TrustedClientImage5,
   },
   {
     imageUrl: TrustedClientImage6,

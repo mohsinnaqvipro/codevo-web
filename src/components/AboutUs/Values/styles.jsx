@@ -20,7 +20,6 @@ export const InnerLayout = styled.div`
 
 export const ValuesHading = styled.h1`
   color: #000;
-
   text-align: center;
   font-size: 42px;
   font-style: normal;

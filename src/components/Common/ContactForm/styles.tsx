@@ -91,7 +91,7 @@ export const FormContainer = styled.div`
   box-shadow: 0px 4px 60px 0px rgba(0, 0, 0, 0.08);
   @media (max-width: ${mobileBreakpoint}) {
     width: 100%;
-    padding: 0.5rem;
+    padding: 0.5rem 0.1rem;
   }
 `;
 
@@ -101,6 +101,7 @@ export const NameContainer = styled.div`
   gap: 1rem;
   @media (max-width: ${mobileBreakpoint}) {
     grid-template-columns: 1fr;
+    padding: 1rem;
   }
 `;
 
@@ -117,8 +118,14 @@ export const MuiButton = styled(Button)`
 
 export const EmailInputHolder = styled.div`
   display: grid;
+  @media (max-width: ${mobileBreakpoint}) {
+    padding: 1rem;
+  }
 `;
 
 export const MessageInputHolder = styled.div`
   display: grid;
+  @media (max-width: ${mobileBreakpoint}) {
+    padding: 1rem;
+  }
 `;

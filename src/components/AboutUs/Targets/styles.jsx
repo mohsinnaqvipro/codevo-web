@@ -7,6 +7,7 @@ export const MainLayout = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
+  justify-content: center;
   @media (max-width: ${mobileBreakpoint}) {
     padding: 1rem;
   }
@@ -16,6 +17,7 @@ export const InnerLayout = styled.div`
   display: flex;
   gap: 2rem;
   width: 350px;
+  height: 326px;
   @media (max-width: ${mobileBreakpoint}) {
     width: 70%;
     margin: 0 auto;

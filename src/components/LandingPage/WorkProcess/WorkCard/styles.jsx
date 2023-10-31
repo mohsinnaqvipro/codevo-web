@@ -49,7 +49,6 @@ export const CardHanding = styled.h5`
 export const CardText = styled.p`
   color: #fafafa;
   font-size: 16px;
-  font-family: Inter;
   font-weight: 400;
   line-height: 24px;
   margin: 0;

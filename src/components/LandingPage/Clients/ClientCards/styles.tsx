@@ -5,8 +5,8 @@ const mobileBreakpoint = "768px";
 
 export const MainContainer = styled.div`
   padding: 1rem;
-  @media (min-width: ${mobileBreakpoint}) {
-    padding: 1rem 4rem;
+  @media (max-width: ${mobileBreakpoint}) {
+    padding-right: 2rem;
   }
 `;
 

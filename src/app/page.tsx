@@ -8,10 +8,6 @@ export default function Home() {
   return (
     <>
       <HomePage />
-      <AboutUsPage />
-      <ServicesPage />
-      <PortfolioPage />
-      <ContactUsPage />
     </>
   );
 }

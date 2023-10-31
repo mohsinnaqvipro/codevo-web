@@ -50,12 +50,13 @@ export const CardLayout = styled.div`
   display: flex;
   gap: 4rem;
   @media (max-width: ${mobileBreakpoint}) {
-    width: 100%;
     flex-direction: column;
     padding: 1rem;
   }
 `;
 export const ImageContainer = styled.div`
+  display: flex;
+  flex-direction: column;
   width: 50%;
   @media (max-width: ${mobileBreakpoint}) {
     width: 100%;
@@ -63,5 +64,8 @@ export const ImageContainer = styled.div`
 `;
 
 export const StyledImage = styled(Image)`
-  width: 100%;
+  @media (max-width: ${mobileBreakpoint}) {
+    width: 100%;
+    height: auto;
+  }
 `;

@@ -20,7 +20,12 @@ export const InnerLayout = styled.div`
   }
 `;
 
-export const LeftConatiner = styled.div``;
+export const LeftConatiner = styled.div`
+  @media (max-width: ${mobileBreakpoint}) {
+    display: flex;
+    justify-content: center;
+  }
+`;
 
 export const ImageContainer = styled.div`
   background: #001764;
@@ -43,8 +48,6 @@ export const StyledImage = styled(Image)`
   height: 350px;
   border-radius: 438px;
   @media (max-width: ${mobileBreakpoint}) {
-    // max-width: 100%;
-    // height: auto;
     width: 250px;
     height: 250px;
   }

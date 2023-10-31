@@ -7,30 +7,30 @@ import ManageHistoryOutlinedIcon from "@mui/icons-material/ManageHistoryOutlined
 
 export const TargetData = [
   {
-    icon: <AdsClickIcon sx={{ fontSize: 180, color: "#1E40AF" }} />,
+    icon: <AdsClickIcon sx={{ fontSize: 157, color: "#1E40AF" }} />,
     title: "Dedication and Communication",
   },
   {
-    icon: <HourglassEmptyIcon sx={{ fontSize: 180, color: "#1E40AF" }} />,
+    icon: <HourglassEmptyIcon sx={{ fontSize: 157, color: "#1E40AF" }} />,
     title: "Timely and Consistent",
   },
   {
-    icon: <CategoryOutlinedIcon sx={{ fontSize: 180, color: "#1E40AF" }} />,
+    icon: <CategoryOutlinedIcon sx={{ fontSize: 157, color: "#1E40AF" }} />,
     title: "Diversity and Inclusion",
   },
   {
-    icon: <StarsOutlinedIcon sx={{ fontSize: 180, color: "#1E40AF" }} />,
+    icon: <StarsOutlinedIcon sx={{ fontSize: 157, color: "#1E40AF" }} />,
     title: "Excellence and Eminence",
   },
   {
     icon: (
-      <SettingsSuggestOutlinedIcon sx={{ fontSize: 180, color: "#1E40AF" }} />
+      <SettingsSuggestOutlinedIcon sx={{ fontSize: 157, color: "#1E40AF" }} />
     ),
     title: "Integrity and Patience",
   },
   {
     icon: (
-      <ManageHistoryOutlinedIcon sx={{ fontSize: 180, color: "#1E40AF" }} />
+      <ManageHistoryOutlinedIcon sx={{ fontSize: 157, color: "#1E40AF" }} />
     ),
     title: "Flexibility and Ingenuity",
   },
