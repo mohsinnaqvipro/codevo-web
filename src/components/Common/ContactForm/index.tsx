@@ -1,4 +1,6 @@
 "use client";
+import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 import InputField from "./InputField";
 import {
@@ -35,7 +37,32 @@ const ContactForm = () => {
 
   const onSubmit = (data: any) => {
     console.log("data: ", data);
+
+    const serviceId = "service_snxhnbi";
+    const templateId = "template_ybgtie5";
+    const publicKey = "odRjVa96revhyyKph";
+
+    // Create a new object that contains dynamic template params
+    const templateParams = {
+      from_firstName: data.firstName,
+      from_lastName: data.lastName,
+      from_email: data.email,
+      to_name: "CodeVo Technologies",
+      message: data.message,
+    };
+
+    // Send the email using EailJS
+    emailjs
+      .send(serviceId, templateId, templateParams, publicKey)
+
+      .then((response) => {
+        alert("Email sent Sucessfully!");
+      })
+      .catch((error) => {
+        console.log("Error sending email", error);
+      });
   };
+
   return (
     <MainLayout>
       <InnerLayout>
@@ -75,7 +102,7 @@ const ContactForm = () => {
             </NameContainer>
             <EmailInputHolder>
               <InputField
-                name="Email"
+                name="email"
                 label="Email*"
                 rules={emailValidationRules}
                 control={control}
@@ -86,7 +113,7 @@ const ContactForm = () => {
             </EmailInputHolder>
             <MessageInputHolder>
               <InputField
-                name="yourMessage"
+                name="message"
                 label="Your Message"
                 control={control}
                 multiline={true}

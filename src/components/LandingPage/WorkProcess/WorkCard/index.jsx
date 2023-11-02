@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 
 import { workData } from "@/utils/Constants/constants";
 
@@ -17,8 +18,8 @@ const WorkCard = () => {
   return (
     <MainLayout>
       {workData.map((item, index) => (
-        <>
-          <InnerLayout key={index}>
+        <React.Fragment key={index}>
+          <InnerLayout>
             <CricleDiv>
               <NumberSpan>{item.sirNo}</NumberSpan>
             </CricleDiv>
@@ -28,7 +29,7 @@ const WorkCard = () => {
           <ImageContainer>
             <StyledImage src={item.arrow} alt=""></StyledImage>
           </ImageContainer>
-        </>
+        </React.Fragment>
       ))}
     </MainLayout>
   );

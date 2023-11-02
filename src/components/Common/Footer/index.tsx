@@ -15,6 +15,7 @@ import {
   NewsLetterContainer,
   StyledButton,
   StyledInputField,
+  InputLabel,
 } from "./styles";
 
 const Footer = () => {
@@ -22,12 +23,12 @@ const Footer = () => {
     <MainLayout>
       <InnerLayout>
         <CodevoContainer>
-          <Image alt="" src={Logo} />
+          <Image src={Logo} alt="" />
           <IntroText>{`Experienced in software analysis and design and a deep understanding of the latest IT trends and solutions.`}</IntroText>
         </CodevoContainer>
         {FooterOptions.map((item, index) => (
-          <FooterOptionsContainer>
-            <HeadingText key={index}>{item.title}</HeadingText>
+          <FooterOptionsContainer key={index}>
+            <HeadingText>{item.title}</HeadingText>
             {item.options.map((option, index) => (
               <OptionsText key={index} href={option.url}>
                 {option.label}
@@ -37,7 +38,7 @@ const Footer = () => {
         ))}
         <NewsLetterContainer>
           <HeadingText>{`Join a Newsletter`}</HeadingText>
-          <IntroText>{`Your Email`}</IntroText>
+          <InputLabel>{"Your Email"}</InputLabel>
           <StyledInputField
             label={`Enter Your Email`}
             variant={`outlined`}

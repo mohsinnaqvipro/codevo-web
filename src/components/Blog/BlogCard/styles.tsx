@@ -44,11 +44,10 @@ export const CardDetails = styled.div`
 `;
 
 export const CardTitle = styled.h6`
-  font-size: 48px;
+  font-size: 2rem;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 4rem;
-  letter-spacing: -0.03rem;
   margin: 0;
 
   @media (max-width: ${mobileBreakpoint}) {

@@ -21,8 +21,8 @@ const PortfolioCard = ({ items }: any) => {
       <MainLayout>
         <InnerLayout>
           {PortfolioCardData.map((item, index) => (
-            <div>
-              <CardHolder key={index}>
+            <React.Fragment key={index}>
+              <CardHolder>
                 <ImageHolder>
                   <StyledImage src={item.imageUrl} alt="" />
                 </ImageHolder>
@@ -35,7 +35,7 @@ const PortfolioCard = ({ items }: any) => {
                   >{`View Details`}</StyledButton>
                 </DetailContainer>
               </CardHolder>
-            </div>
+            </React.Fragment>
           ))}
         </InnerLayout>
       </MainLayout>

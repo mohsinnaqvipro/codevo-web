@@ -46,6 +46,18 @@ export const IntroText = styled.p`
     text-align: center;
   }
 `;
+export const InputLabel = styled.label`
+  color: #77808b;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.875rem;
+  margin: 0;
+  @media (max-width: ${mobileBreakpoint}) {
+    width: 80%;
+    text-align: center;
+  }
+`;
 
 export const FooterOptionsContainer = styled.div`
   display: flex;

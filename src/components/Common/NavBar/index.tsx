@@ -29,7 +29,7 @@ const NavBar = () => {
     <MainLayout>
       <InnerLayout>
         <ImageHolder>
-          <Image src={Logo} alt=""></Image>
+          <Image src={Logo} alt="" priority={true} />
         </ImageHolder>
         <NavContainer>
           {NavItems.map((item, index) => (

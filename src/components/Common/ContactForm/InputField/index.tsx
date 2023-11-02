@@ -13,6 +13,7 @@ interface MyComponentProps {
   label: string;
   errors: any;
   rules?: object;
+  value?: string;
 }
 
 const InputField: React.FC<MyComponentProps> = ({
@@ -24,6 +25,7 @@ const InputField: React.FC<MyComponentProps> = ({
   rules,
   variant,
   errors,
+  value,
 }) => {
   return (
     <>
@@ -40,6 +42,7 @@ const InputField: React.FC<MyComponentProps> = ({
               rows={2}
               id="outlined-basic"
               variant={variant}
+              value={value}
               {...field}
             />
             {errors[name] && <ErrorSpan>{errors[name].message}</ErrorSpan>}

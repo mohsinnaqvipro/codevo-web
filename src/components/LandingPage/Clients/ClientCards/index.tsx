@@ -18,15 +18,13 @@ const ClientCards = () => {
       <MainContainer>
         <InnerContainer>
           {ClientData.map((item, index) => (
-            <>
-              <CardContainer key={index}>
-                <ImageContainer>
-                  <StyledImage src={item.imageUrl} alt=""></StyledImage>
-                  <HeadingText>{item.title}</HeadingText>
-                </ImageContainer>
-                <IntroText>{item.details}</IntroText>
-              </CardContainer>
-            </>
+            <CardContainer key={index}>
+              <ImageContainer>
+                <StyledImage src={item.imageUrl} alt=""></StyledImage>
+                <HeadingText>{item.title}</HeadingText>
+              </ImageContainer>
+              <IntroText>{item.details}</IntroText>
+            </CardContainer>
           ))}
         </InnerContainer>
       </MainContainer>
