@@ -15,28 +15,26 @@ import {
   StyledButton,
 } from "./styles";
 
-const PortfolioCard = ({ items }: any) => {
+const PortfolioCard = ({ item }: any) => {
   return (
     <>
       <MainLayout>
         <InnerLayout>
-          {PortfolioCardData.map((item, index) => (
-            <React.Fragment key={index}>
-              <CardHolder>
-                <ImageHolder>
-                  <StyledImage src={item.imageUrl} alt="" />
-                </ImageHolder>
-                <DetailContainer>
-                  <TitleHanding>{item.title}</TitleHanding>
-                  <CardText>{item.dicription}</CardText>
-                  <StyledButton
-                    variant="contained"
-                    size="small"
-                  >{`View Details`}</StyledButton>
-                </DetailContainer>
-              </CardHolder>
-            </React.Fragment>
-          ))}
+          <div>
+            <CardHolder>
+              <ImageHolder>
+                <StyledImage src={item.imageUrl} alt="" />
+              </ImageHolder>
+              <DetailContainer>
+                <TitleHanding>{item.title}</TitleHanding>
+                <CardText>{item.dicription}</CardText>
+                <StyledButton
+                  variant="contained"
+                  size="small"
+                >{`View Details`}</StyledButton>
+              </DetailContainer>
+            </CardHolder>
+          </div>
         </InnerLayout>
       </MainLayout>
     </>

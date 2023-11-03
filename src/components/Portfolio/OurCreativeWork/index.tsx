@@ -1,28 +1,38 @@
 import React from "react";
 
-// import Carousel from "react-material-ui-carousel";
 import PortfolioCard from "./PortfolioCard";
 import { PortfolioCardData } from "@/utils/Constants/porfolioConstants";
-import Carousel from "react-material-ui-carousel";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import CarousalImage from "@/assets/images/CarouselImage.png";
 
-import { InnerLayout, MainLayout, WorkHeading, WorkSpan } from "./styles";
+import {
+  InnerLayout,
+  MainLayout,
+  WorkHeading,
+  WorkSpan,
+  CardWrapper,
+  CarousalWrapper,
+  CarousalButton,
+  StyledCarousal,
+} from "./styles";
 const OurCreativeWork = () => {
   const cardGroups = [];
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 3,
-      slidesToSlide: 1, // optional, default to 1.
+      slidesToSlide: 1,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
       items: 2,
-      slidesToSlide: 1, // optional, default to 1.
+      slidesToSlide: 1,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
       items: 1,
-      slidesToSlide: 1, // optional, default to 1.
+      slidesToSlide: 1,
     },
   };
 
@@ -35,17 +45,23 @@ const OurCreativeWork = () => {
           </WorkHeading>
         </InnerLayout>
       </MainLayout>
-      <Carousel
+      <StyledCarousal
         responsive={responsive}
-        autoPlay={true}
-        autoPlaySpeed={100}
+        ssr
         showDots={true}
-        animation="slide"
+        slidesToSlide={1}
+        infinite
+        containerClass="container-with-dots"
+        itemClass="image-item"
+        arrows={false}
+        deviceType={""}
       >
+        {/* <CardWrapper> */}
         {PortfolioCardData.map((item, index) => (
-          <PortfolioCard key={index} items={item} />
+          <PortfolioCard key={index} item={item} />
         ))}
-      </Carousel>
+        {/* </CardWrapper> */}
+      </StyledCarousal>
     </>
   );
 };
