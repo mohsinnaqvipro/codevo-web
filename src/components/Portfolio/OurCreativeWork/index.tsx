@@ -2,18 +2,13 @@ import React from "react";
 
 import PortfolioCard from "./PortfolioCard";
 import { PortfolioCardData } from "@/utils/Constants/porfolioConstants";
-import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import CarousalImage from "@/assets/images/CarouselImage.png";
 
 import {
   InnerLayout,
   MainLayout,
   WorkHeading,
   WorkSpan,
-  CardWrapper,
-  CarousalWrapper,
-  CarousalButton,
   StyledCarousal,
 } from "./styles";
 const OurCreativeWork = () => {
@@ -56,11 +51,9 @@ const OurCreativeWork = () => {
         arrows={false}
         deviceType={""}
       >
-        {/* <CardWrapper> */}
         {PortfolioCardData.map((item, index) => (
           <PortfolioCard key={index} item={item} />
         ))}
-        {/* </CardWrapper> */}
       </StyledCarousal>
     </>
   );
