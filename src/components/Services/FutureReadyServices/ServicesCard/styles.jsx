@@ -4,7 +4,6 @@ import Image from "next/image";
 export const MainLayout = styled.div``;
 export const InnerLayout = styled.div`
   padding: 1rem;
-  width: 17.1875rem;
   height: 18.4375rem;
   border-radius: 0.25rem;
   background: #f7fbff;

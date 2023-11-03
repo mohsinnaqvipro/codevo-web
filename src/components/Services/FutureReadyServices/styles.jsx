@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Button from "@mui/material/Button";
 
 export const MainLayout = styled.div`
   padding: 1rem 4rem;
@@ -66,4 +67,44 @@ export const CardContainer = styled.div`
   width: 50%;
   display: flex;
   gap: 1rem;
+`;
+
+export const ServicesContainer = styled.div`
+  padding: 1rem 4rem;
+  display: flex;
+  gap: 1rem;
+`;
+export const ServicesCards = styled.div`
+  display: flex;
+  gap: 1rem;
+`;
+
+export const BuildContainer = styled.div`
+  width: 50%;
+  border-radius: 0.1875rem;
+  background: linear-gradient(73deg, #1e40af 53.52%, #215ff6 127.38%);
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+export const BuildHeading = styled.h1`
+  color: #fff;
+
+  font-family: DM Sans;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0.02rem;
+`;
+export const StyledButton = styled(Button)`
+  border-radius: 0.375rem;
+  background: #fff;
+  color: #1e40af;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+  letter-spacing: 0.00125rem;
+  padding: 0.8rem;
 `;

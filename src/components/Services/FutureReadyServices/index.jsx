@@ -14,6 +14,11 @@ import {
   WorkHeadingWrapper,
   WorkSpan,
   CardContainer,
+  ServicesContainer,
+  ServicesCards,
+  BuildContainer,
+  BuildHeading,
+  StyledButton,
 } from "./styles";
 
 const FutureReadyServices = () => {
@@ -54,17 +59,19 @@ const FutureReadyServices = () => {
           />
         </CardContainer>
       </SolutionContainer>
-      <div style={{ display: "flex" }}>
-        {ServicesData.map((items, index) => (
-          <ServicesCard
-            key={index}
-            title={items.title}
-            details={items.details}
-            url={items.url}
-          />
-        ))}
-      </div>
-      <div>
+      <ServicesContainer>
+        <ServicesCards>
+          {ServicesData.map((items, index) => (
+            <ServicesCard
+              key={index}
+              title={items.title}
+              details={items.details}
+              url={items.url}
+            />
+          ))}
+        </ServicesCards>
+      </ServicesContainer>
+      <ServicesContainer>
         <CardContainer>
           <ServicesCard
             title="Graphic Designing"
@@ -77,8 +84,11 @@ const FutureReadyServices = () => {
             details={` Our specialized team of experts champions contribute to custom software development for your project`}
           />
         </CardContainer>
-        <div></div>
-      </div>
+        <BuildContainer>
+          <BuildHeading>{`Want to Build a Product?`}</BuildHeading>
+          <StyledButton variant="contained">{`Contact Us`}</StyledButton>
+        </BuildContainer>
+      </ServicesContainer>
     </>
   );
 };
