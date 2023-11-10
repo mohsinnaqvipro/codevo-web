@@ -1,37 +1,33 @@
-import AdsClickIcon from "@mui/icons-material/AdsClick";
-import HourglassEmptyIcon from "@mui/icons-material/HourglassEmpty";
-import CategoryOutlinedIcon from "@mui/icons-material/CategoryOutlined";
-import SettingsSuggestOutlinedIcon from "@mui/icons-material/SettingsSuggestOutlined";
-import StarsOutlinedIcon from "@mui/icons-material/StarsOutlined";
-import ManageHistoryOutlinedIcon from "@mui/icons-material/ManageHistoryOutlined";
+import Dedication from "@/assets/icons/dedication";
+import Timely from "@/assets/icons/time";
+import Diversity from "@/assets/icons/diversity";
+import Excellence from "@/assets/icons/excellent";
+import Integerity from "@/assets/icons/integerity";
+import Flexibility from "@/assets/icons/flexibility";
 
 export const TargetData = [
   {
-    icon: <AdsClickIcon sx={{ fontSize: 157, color: "#1E40AF" }} />,
+    icon: <Dedication />,
     title: "Dedication and Communication",
   },
   {
-    icon: <HourglassEmptyIcon sx={{ fontSize: 157, color: "#1E40AF" }} />,
+    icon: <Timely />,
     title: "Timely and Consistent",
   },
   {
-    icon: <CategoryOutlinedIcon sx={{ fontSize: 157, color: "#1E40AF" }} />,
+    icon: <Diversity />,
     title: "Diversity and Inclusion",
   },
   {
-    icon: <StarsOutlinedIcon sx={{ fontSize: 157, color: "#1E40AF" }} />,
+    icon: <Excellence />,
     title: "Excellence and Eminence",
   },
   {
-    icon: (
-      <SettingsSuggestOutlinedIcon sx={{ fontSize: 157, color: "#1E40AF" }} />
-    ),
+    icon: <Integerity />,
     title: "Integrity and Patience",
   },
   {
-    icon: (
-      <ManageHistoryOutlinedIcon sx={{ fontSize: 157, color: "#1E40AF" }} />
-    ),
+    icon: <Flexibility />,
     title: "Flexibility and Ingenuity",
   },
 ];

@@ -14,7 +14,7 @@ export const LifeHeading = styled.h1`
   text-align: center;
   font-size: 2.625rem;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: normal;
 `;
 
@@ -22,7 +22,7 @@ export const LifeSpam = styled.span`
   color: #1e40af;
   font-size: 2.625rem;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: normal;
 `;
 
@@ -44,7 +44,7 @@ export const LifeContainer = styled.div`
 
 export const ProductContainer = styled.div`
   padding: 3rem 0rem 0rem 1rem;
-  width: 18.4375rem;
+  width: 17.2rem;
   border: 1px solid #eee;
   background: #fff;
 `;
@@ -53,10 +53,11 @@ export const StyledButton = styled(Button)`
   border-radius: 0.375rem;
   background: #1e40af;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.25rem;
   letter-spacing: 0.00125rem;
   padding: 0.8rem;
+  text-transform: none;
 `;
 
 export const ProductHeading = styled.h1`
@@ -64,7 +65,7 @@ export const ProductHeading = styled.h1`
   color: #000;
   font-size: 2rem;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 120%;
   letter-spacing: 0.02rem;
 `;

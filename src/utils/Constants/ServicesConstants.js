@@ -1,25 +1,28 @@
-import ServicesCardImg from "@/assets/images/ServicesCardImg.png";
+import ServicesCardImg3 from "@/assets/images/servicesCardImg3.png";
+import ServicesCardImg4 from "@/assets/images/servicesCardImg4.png";
+import ServicesCardImg5 from "@/assets/images/servicesCardImg5.png";
+import ServicesCardImg6 from "@/assets/images/servicesCardImg6.png";
 
 export const ServicesData = [
   {
-    title: "Graphic Designing",
-    url: ServicesCardImg,
-    details: `Elevate your brand with our seasoned experience in crafting online identities that make a lasting impact.`,
+    title: "Website Development",
+    url: ServicesCardImg3,
+    details: `High Performing, secure, intuitive and best-in-class enterprise web app development.`,
   },
   {
-    title: "SaaS Development",
-    url: ServicesCardImg,
-    details: `Our specialized team of experts champions contribute to custom software development for your project`,
+    title: "Mobile App Development",
+    url: ServicesCardImg4,
+    details: `We offer a full cycle of mobile application design and integration to enable seamless user experiences`,
   },
   {
-    title: "Graphic Designing",
-    url: ServicesCardImg,
-    details: `Elevate your brand with our seasoned experience in crafting online identities that make a lasting impact.`,
+    title: "DevOps",
+    url: ServicesCardImg5,
+    details: `Deliver applications at the pace of business with comprehensiveDevOps services`,
   },
   {
-    title: "SaaS Development",
-    url: ServicesCardImg,
-    details: `Our specialized team of experts champions contribute to custom software development for your project`,
+    title: "UI UX Designing ",
+    url: ServicesCardImg6,
+    details: `We build and design your product with aesthetically appealing visual designs with great user experience`,
   },
 ];
 

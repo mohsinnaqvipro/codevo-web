@@ -61,7 +61,7 @@ export const DividerBlue = styled.div`
 `;
 export const DividerGrey = styled.div`
   position: relative;
-  width: 530px;
+  width: 30rem;
   height: 1px;
   background: #c4c4c4;
   border: 1px solid #c4c4c4;
@@ -92,7 +92,6 @@ export const ViewText = styled.h2`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  max-width: 80%;
   @media (max-width: ${mobileBreakpoint}) {
     font-size: 18px;
     align-items: center;
@@ -103,7 +102,9 @@ export const ViewText = styled.h2`
 export const ButtonContainer = styled.div``;
 
 export const StyleButton = styled(Button)`
-  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  padding: 0.8rem 3rem;
+  text-transform: none;
   border-radius: 5px;
   background: #1e40af;
 `;

@@ -8,10 +8,8 @@ import {
   LeftConatiner,
   ImageContainer,
   StyledImage,
-  CeoDetails,
-  CeoHeading,
-  CeoText,
   CeoName,
+  StyledDivider,
   CeoDestination,
 } from "./styles";
 
@@ -24,13 +22,17 @@ const Ceo = () => {
             <ImageContainer>
               <StyledImage src={CeoImage} alt=""></StyledImage>
             </ImageContainer>
-          </LeftConatiner>
-          <CeoDetails>
-            <CeoHeading>{`Strive the Change`}</CeoHeading>
-            <CeoText>{`We aim to achieve the highest standard of building software solutions across the globe through user-focused efforts. We are moving steadily towards being a world-leading custom software company because we believe that the future belongs to those who see the possibilities before they become obvious. To help businesses realize their full potential, we stay consistent & relevant to our client's business goals.`}</CeoText>
-            <CeoName>{`CEO, Name`}</CeoName>
+            <CeoName>{`CEO, M. Hamza`}</CeoName>
             <CeoDestination>{`CEO, CodeVo Technologies`}</CeoDestination>
-          </CeoDetails>
+          </LeftConatiner>
+          <StyledDivider orientation="vertical" />
+          <LeftConatiner>
+            <ImageContainer>
+              <StyledImage src={CeoImage} alt=""></StyledImage>
+            </ImageContainer>
+            <CeoName>{`CTO, Mohsin Naqvi`}</CeoName>
+            <CeoDestination>{`CTO, CodeVo Technologies`}</CeoDestination>
+          </LeftConatiner>
         </InnerLayout>
       </MainLayout>
     </>

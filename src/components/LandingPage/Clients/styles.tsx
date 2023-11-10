@@ -14,6 +14,8 @@ export const InnerContainer = styled.div`
   flex-direction: column;
   width: 50%;
   margin: 0 auto;
+  gap: 2rem;
+  padding: 1rem 2rem;
   @media (max-width: ${mobileBreakpoint}) {
     width: 100%;
   }
@@ -21,10 +23,11 @@ export const InnerContainer = styled.div`
 export const ClientTitle = styled.h2`
   color: #2a3342;
   text-align: center;
-  font-size: 42px;
+  font-size: 2.625rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin: 0;
   @media (max-width: ${mobileBreakpoint}) {
     font-size: 28px;
     font-style: normal;
@@ -35,8 +38,10 @@ export const ClientTitle = styled.h2`
 export const ClientDetail = styled.p`
   color: #12141d;
   text-align: center;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
+  width: 75%;
+  margin: 0 auto;
 `;

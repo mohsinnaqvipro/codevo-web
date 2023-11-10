@@ -16,7 +16,7 @@ const Project = () => {
       <MainLayout>
         <InnerLayout>
           <CountContainer>
-            <ProjectCount>{`80+`}</ProjectCount>
+            <ProjectCount>{`50+`}</ProjectCount>
             <CountText>{`Satisfied clients`}</CountText>
           </CountContainer>
           <Divider
@@ -24,7 +24,7 @@ const Project = () => {
             style={{ background: "#1E40AF", height: "98px", width: "1px" }}
           />
           <CountContainer>
-            <ProjectCount>{`200+`}</ProjectCount>
+            <ProjectCount>{`50+`}</ProjectCount>
             <CountText>{`Projects completed`}</CountText>
           </CountContainer>
           <Divider
@@ -32,7 +32,7 @@ const Project = () => {
             style={{ background: "#1E40AF", height: "98px", width: "1px" }}
           />
           <CountContainer>
-            <ProjectCount>{`99+`}</ProjectCount>
+            <ProjectCount>{`50+`}</ProjectCount>
             <CountText>{`Reviews given`}</CountText>
           </CountContainer>
         </InnerLayout>

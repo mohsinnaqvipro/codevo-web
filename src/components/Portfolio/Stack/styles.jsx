@@ -16,33 +16,32 @@ export const InnerLayout = styled.div`
 export const StackHeading = styled.h2`
   color: #000;
   text-align: center;
-  font-size: 42px;
+  font-size: 2.625rem;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: normal;
 
   @media (max-width: ${mobileBreakpoint}) {
-    font-size: 28px;
+    font-size: 2rem;
   }
 `;
 
 export const StackSpan = styled.span`
   color: #1e40af;
-  font-size: 42px;
+  font-size: 2.625rem;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: normal;
 
   @media (max-width: ${mobileBreakpoint}) {
-    font-size: 28px;
+    font-size: 2rem;
   }
 `;
 
 export const TechContainer = styled.div`
   padding: 1rem 4rem;
   display: flex;
-  gap: 6rem;
-  justify-content: center;
+  justify-content: space-between;
 
   @media (max-width: ${mobileBreakpoint}) {
     padding: 1rem;

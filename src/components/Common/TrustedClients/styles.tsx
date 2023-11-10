@@ -13,7 +13,7 @@ export const MainContainer = styled.div`
 export const HeaderText = styled.h1`
   color: #2a3342;
   text-align: center;
-  font-size: 42px;
+  font-size: 2.625rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -34,4 +34,7 @@ export const ImageContainer = styled.div`
   }
 `;
 
-export const StyledImage = styled(Image)``;
+export const StyledImage = styled(Image)`
+  width: 12.5rem;
+  height: 12.5rem;
+`;

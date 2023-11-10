@@ -1,5 +1,4 @@
 import React from "react";
-import ServicesCardImg from "@/assets/images/ServicesCardImg.png";
 
 import {
   InnerLayout,
@@ -16,7 +15,7 @@ const ServicesCard = ({ title, url, details }) => {
       <MainLayout>
         <InnerLayout>
           <ImageHolder>
-            <StyledImage src={url} alt="" />
+            <StyledImage src={url} alt="A" />
             <CardTitle>{title}</CardTitle>
           </ImageHolder>
           <DiscriptionWrapper>

@@ -18,25 +18,21 @@ import {
 const PortfolioCard = ({ item }: any) => {
   return (
     <>
-      <MainLayout>
-        <InnerLayout>
-          <div>
-            <CardHolder>
-              <ImageHolder>
-                <StyledImage src={item.imageUrl} alt="" />
-              </ImageHolder>
-              <DetailContainer>
-                <TitleHanding>{item.title}</TitleHanding>
-                <CardText>{item.dicription}</CardText>
-                <StyledButton
-                  variant="contained"
-                  size="small"
-                >{`View Details`}</StyledButton>
-              </DetailContainer>
-            </CardHolder>
-          </div>
-        </InnerLayout>
-      </MainLayout>
+      <InnerLayout>
+        <CardHolder>
+          <ImageHolder>
+            <StyledImage src={item.imageUrl} alt="" />
+          </ImageHolder>
+          <DetailContainer>
+            <TitleHanding>{item.title}</TitleHanding>
+            <CardText>{item.dicription}</CardText>
+            <StyledButton
+              variant="contained"
+              size="small"
+            >{`View Details`}</StyledButton>
+          </DetailContainer>
+        </CardHolder>
+      </InnerLayout>
     </>
   );
 };

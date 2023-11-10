@@ -9,7 +9,7 @@ export const MainLayout = styled.div`
   background-image: url(${HeroImage.src});
 `;
 export const InnerLayout = styled.div`
-  padding: 4rem 4rem;
+  padding: 6.5rem;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -23,9 +23,9 @@ export const InnerLayout = styled.div`
 export const HeroHeading = styled.h1`
   color: #fff;
   text-align: center;
-  font-size: 42px;
+  font-size: 2.625rem;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: normal;
   margin: 0;
   @media (max-width: ${mobileBreakpoint}) {
@@ -37,11 +37,12 @@ export const HeroHeading = styled.h1`
 export const HeroText = styled.p`
   color: #fff;
   text-align: center;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin: 0;
+  width: 90.687%;
+  margin: 0 auto;
   @media (max-width: ${mobileBreakpoint}) {
     font-size: 18px;
     font-weight: 400;
@@ -60,6 +61,9 @@ export const HeroButton = styled(Button)`
   border-radius: 6px;
   border: 1px solid #fff;
   color: #fff;
+  width: 13rem;
+  text-transform: none;
+
   @media (max-width: ${mobileBreakpoint}) {
     font-size: 16px;
     font-style: normal;

@@ -1,7 +1,12 @@
 import React from "react";
+import { useRouter } from "next/navigation";
+
 import ServicesCard from "./ServicesCard";
 import { ServicesData } from "@/utils/Constants/ServicesConstants";
 import ServicesCardImg from "@/assets/images/ServicesCardImg.png";
+import ServicesCardImg1 from "@/assets/images/ServicesCardImg1.png";
+import ServicesCardImg3 from "@/assets/images/servicesCardImg3.png";
+import ServicesCardImg4 from "@/assets/images/servicesCardImg4.png";
 
 import {
   Discription,
@@ -22,6 +27,8 @@ import {
 } from "./styles";
 
 const FutureReadyServices = () => {
+  const router = useRouter();
+
   return (
     <>
       <MainLayout>
@@ -54,7 +61,7 @@ const FutureReadyServices = () => {
           />
           <ServicesCard
             title="SaaS Development"
-            url={ServicesCardImg}
+            url={ServicesCardImg1}
             details={` Our specialized team of experts champions contribute to custom software development for your project`}
           />
         </CardContainer>
@@ -74,19 +81,22 @@ const FutureReadyServices = () => {
       <ServicesContainer>
         <CardContainer>
           <ServicesCard
-            title="Graphic Designing"
-            url={ServicesCardImg}
-            details={` Elevate your brand with our seasoned experience in crafting online identities that make a lasting impact.`}
+            title="QA Testing"
+            url={ServicesCardImg3}
+            details={`After the completion of the project’s development, we ensure smooth testing and validation`}
           />
           <ServicesCard
-            title="SaaS Development"
-            url={ServicesCardImg}
-            details={` Our specialized team of experts champions contribute to custom software development for your project`}
+            title="Digital Marketing"
+            url={ServicesCardImg4}
+            details={`Looking to fine-tune your social media marketing strategy? We are on the go for you!`}
           />
         </CardContainer>
         <BuildContainer>
           <BuildHeading>{`Want to Build a Product?`}</BuildHeading>
-          <StyledButton variant="contained">{`Contact Us`}</StyledButton>
+          <StyledButton
+            variant="contained"
+            onClick={() => router.push("/contactus")}
+          >{`Contact Us`}</StyledButton>
         </BuildContainer>
       </ServicesContainer>
     </>

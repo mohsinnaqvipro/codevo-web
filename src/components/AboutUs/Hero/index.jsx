@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import React from "react";
 
 import {
@@ -12,6 +13,7 @@ import {
 } from "./styles";
 
 const Hero = () => {
+  const router = useRouter();
   return (
     <MainLayout>
       <InnerLayout>
@@ -21,6 +23,7 @@ const Hero = () => {
           <HeroButton
             variant="outlined"
             size="small"
+            onClick={() => router.push("/contactus")}
           >{`Book a Demo`}</HeroButton>
         </ButtonContinaer>
       </InnerLayout>

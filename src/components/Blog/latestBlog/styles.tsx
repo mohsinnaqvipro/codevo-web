@@ -35,12 +35,12 @@ export const TextWrapper = styled.h1`
 `;
 export const TextSpan = styled.span`
   color: #1e40af;
-  font-size: 42px;
+  font-size: 2.625rem;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: normal;
   @media (max-width: ${mobileBreakpoint}) {
-    font-size: 28px;
+    font-size: 2rem;
   }
 `;
 export const ImageHolder = styled.div`
@@ -53,7 +53,7 @@ export const StyledImage = styled(Image)`
   padding-bottom: 1rem;
 `;
 
-export const BlogTitle = styled.h2`
+export const BlogTitle = styled.h3`
   font-size: 2rem;
   font-style: normal;
   font-weight: 500;

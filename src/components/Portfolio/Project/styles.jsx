@@ -10,9 +10,9 @@ export const MainLayout = styled.div`
 `;
 
 export const InnerLayout = styled.div`
+  padding: 1rem 4rem;
   display: flex;
-  justify-content: center;
-  gap: 5rem;
+  justify-content: space-between;
 
   @media (max-width: ${mobileBreakpoint}) {
     flex-direction: column;
@@ -29,7 +29,7 @@ export const InnerLayout = styled.div`
 
 export const ProjectCount = styled.h2`
   color: #1e40af;
-  font-size: 48px;
+  font-size: 2.625rem;
   font-style: normal;
   font-weight: 600;
   line-height: 48px;
@@ -42,11 +42,11 @@ export const CountContainer = styled.div``;
 
 export const CountText = styled.p`
   color: #000;
-  font-size: 28px;
+  font-size: 1.75rem;
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
   @media (max-width: ${mobileBreakpoint}) {
-    font-size: 24px;
+    font-size: 2rem;
   }
 `;

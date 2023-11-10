@@ -13,7 +13,9 @@ export const MainLayout = styled.div`
 export const InnerLayout = styled.div`
   padding: 2rem 3rem;
   display: flex;
-  gap: 2.4rem;
+  gap: 3rem;
+  justify-content: space-between;
+
   @media (max-width: ${mobileBreakpoint}) {
     flex-direction: column;
     padding: 0;
@@ -21,10 +23,7 @@ export const InnerLayout = styled.div`
 `;
 
 export const LeftConatiner = styled.div`
-  @media (max-width: ${mobileBreakpoint}) {
-    display: flex;
-    justify-content: center;
-  }
+  text-align: center;
 `;
 
 export const ImageContainer = styled.div`
@@ -35,6 +34,7 @@ export const ImageContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2rem;
   @media (max-width: ${mobileBreakpoint}) {
     width: 300px;
     height: 300px;
@@ -50,41 +50,6 @@ export const StyledImage = styled(Image)`
   @media (max-width: ${mobileBreakpoint}) {
     width: 250px;
     height: 250px;
-  }
-`;
-
-export const CeoDetails = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  @media (max-width: ${mobileBreakpoint}) {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-`;
-
-export const CeoHeading = styled.h2`
-  color: #000;
-  font-size: 42px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  margin: 0;
-  @media (max-width: ${mobileBreakpoint}) {
-    font-size: 28px;
-  }
-`;
-
-export const CeoText = styled.p`
-  color: #6b7280;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 161.023%;
-  margin: 0;
-  @media (max-width: ${mobileBreakpoint}) {
-    font-size: 18px;
   }
 `;
 
@@ -106,5 +71,17 @@ export const CeoDestination = styled.p`
   margin: 0;
   @media (max-width: ${mobileBreakpoint}) {
     font-size: 18px;
+  }
+`;
+
+export const StyledDivider = styled.div`
+  height: 20rem;
+  width: 1px;
+  background: #b8b8b8;
+  border: 1px solid #b8b8b8;
+  margin-top: 4rem;
+  @media (max-width: ${mobileBreakpoint}) {
+    width: 20rem;
+    height: 1px;
   }
 `;

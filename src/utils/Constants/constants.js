@@ -1,12 +1,10 @@
 import TrustedClientImage1 from "@/assets/images/TrustedClient1.png";
 import TrustedClientImage2 from "@/assets/images/TrustedClient2.png";
 import TrustedClientImage3 from "@/assets/images/TrustedClient3.png";
-import TrustedClientImage4 from "@/assets/images/TrustedClient4.png";
-import TrustedClientImage5 from "@/assets/images/TrustedClient5.png";
-import TrustedClientImage6 from "@/assets/images/TrustedClient6.png";
-import ClientImage1 from "@/assets/images/Client1.png";
-import ClientImage2 from "@/assets/images/Client2.png";
-import ClientImage3 from "@/assets/images/Client3.png";
+import ClientImage1 from "@/assets/images/Client1.jpeg";
+import ClientImage2 from "@/assets/images/Client2.jpeg";
+import ClientImage3 from "@/assets/images/Client3.jpeg";
+
 import PhoneIcon from "@/assets/icons/phone";
 import LocationIcon from "@/assets/icons/location";
 
@@ -17,8 +15,6 @@ import BlogCardImage2 from "@/assets/images/BlogCard2.png";
 import BlogCardImage3 from "@/assets/images/BlogCard3.png";
 import BlogCardImage4 from "@/assets/images/BlogCard4.png";
 import BlogCardImage5 from "@/assets/images/BlogCard5.png";
-
-// import LocationIcon from "@/assets/icons/location";
 
 export const NavItems = [
   { label: "Home", url: "/home" },
@@ -71,30 +67,24 @@ export const ImageContent = [
   {
     imageUrl: TrustedClientImage3,
   },
-  {
-    imageUrl: TrustedClientImage4,
-  },
-  {
-    imageUrl: TrustedClientImage6,
-  },
 ];
 
 export const ClientData = [
   {
     imageUrl: ClientImage3,
-    title: "Mila McSabbu",
+    title: "Christian Reyes",
     details:
       "“An easy-to-use catalog manager that helps you keep your music metadata organized.”",
   },
   {
     imageUrl: ClientImage2,
-    title: "Robert Fox",
+    title: "Jonathan Oh",
     details:
       "“Upload your recordings and input the metadata and ownership details.”",
   },
   {
     imageUrl: ClientImage1,
-    title: "Jenny Wilson",
+    title: "Melissa Garcia",
     details:
       "“Create multiple aliases for music creators in the same contact record and eliminate double-entry on contact information.”",
   },
@@ -107,7 +97,7 @@ export const ContactData = [
     value: "+92 (300)161-027-1",
   },
   {
-    icon: <PhoneIcon />,
+    icon: <LocationIcon />,
     title: "Address",
     value: "607 Q - Block Johar Town Lahore, Punjab Pakistan",
   },

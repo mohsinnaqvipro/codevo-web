@@ -11,6 +11,7 @@ import {
   ViewHeading,
   ViewSpan,
   CardLayout,
+  CardContainer,
   ImageContainer,
   StyledImage,
 } from "./styles";
@@ -28,36 +29,42 @@ const OverView = () => {
         </InnerLayout>
       </MainLayout>
       <CardLayout>
-        <ViewCard
-          srNo={OverViewData[0].srNo}
-          title={OverViewData[0].title}
-          details={OverViewData[0].details}
-        />
-        <ImageContainer>
-          <StyledImage src={ViewImage} alt="" />
-        </ImageContainer>
+        <CardContainer>
+          <ViewCard
+            srNo={OverViewData[0].srNo}
+            title={OverViewData[0].title}
+            details={OverViewData[0].details}
+          />
+          <ImageContainer>
+            <StyledImage src={ViewImage} alt="" />
+          </ImageContainer>
+        </CardContainer>
       </CardLayout>
 
       <CardLayout>
-        <ImageContainer>
-          <StyledImage src={ViewImage2} alt="" />
-        </ImageContainer>
-        <ViewCard
-          srNo={OverViewData[1].srNo}
-          title={OverViewData[1].title}
-          details={OverViewData[1].details}
-        />
+        <CardContainer>
+          <ImageContainer>
+            <StyledImage src={ViewImage2} alt="" />
+          </ImageContainer>
+          <ViewCard
+            srNo={OverViewData[1].srNo}
+            title={OverViewData[1].title}
+            details={OverViewData[1].details}
+          />
+        </CardContainer>
       </CardLayout>
 
       <CardLayout>
-        <ViewCard
-          srNo={OverViewData[2].srNo}
-          title={OverViewData[2].title}
-          details={OverViewData[2].details}
-        />
-        <ImageContainer>
-          <StyledImage src={ViewImage1} alt="" />
-        </ImageContainer>
+        <CardContainer>
+          <ViewCard
+            srNo={OverViewData[2].srNo}
+            title={OverViewData[2].title}
+            details={OverViewData[2].details}
+          />
+          <ImageContainer>
+            <StyledImage src={ViewImage1} alt="" />
+          </ImageContainer>
+        </CardContainer>
       </CardLayout>
     </>
   );

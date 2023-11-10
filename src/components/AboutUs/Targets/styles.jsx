@@ -3,7 +3,6 @@ import styled from "styled-components";
 const mobileBreakpoint = "768px";
 
 export const MainLayout = styled.div`
-  padding: 1rem 4rem;
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
@@ -16,8 +15,8 @@ export const MainLayout = styled.div`
 export const InnerLayout = styled.div`
   display: flex;
   gap: 2rem;
-  width: 350px;
-  height: 326px;
+  width: 23.75rem;
+  height: 20.375rem;
   @media (max-width: ${mobileBreakpoint}) {
     width: 70%;
     margin: 0 auto;

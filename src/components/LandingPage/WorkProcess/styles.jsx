@@ -15,6 +15,7 @@ export const InnerLayout = styled.div`
   flex-direction: column;
   width: 50%;
   margin: 0 auto;
+  padding-top: 2rem;
   @media (max-width: ${mobileBreakpoint}) {
     width: 100%;
   }
@@ -22,9 +23,9 @@ export const InnerLayout = styled.div`
 export const HeadingText = styled.h1`
   color: #fff;
   text-align: center;
-  font-size: 42px;
+  font-size: 2.625rem;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: normal;
   @media (max-width: ${mobileBreakpoint}) {
     font-size: 28px;
@@ -38,6 +39,7 @@ export const WorkText = styled.p`
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
+  margin: 0;
   @media (max-width: ${mobileBreakpoint}) {
     width: 80%;
     margin: 0 auto;

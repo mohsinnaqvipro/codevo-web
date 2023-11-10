@@ -21,11 +21,12 @@ export const InnerLayout = styled.div`
 export const ValuesHading = styled.h1`
   color: #000;
   text-align: center;
-  font-size: 42px;
+  font-size: 2.625rem;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: normal;
   margin: 0;
+  margin-top: 2rem;
   @media (max-width: ${mobileBreakpoint}) {
     font-size: 28px;
   }
@@ -33,11 +34,12 @@ export const ValuesHading = styled.h1`
 
 export const Culture = styled.span`
   color: #1e40af;
-  font-size: 42px;
+  font-size: 2.625rem;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: normal;
   margin: 0;
+  margin-top: 2rem;
   @media (max-width: ${mobileBreakpoint}) {
     font-size: 28px;
   }
@@ -46,11 +48,13 @@ export const Culture = styled.span`
 export const ValuesText = styled.p`
   color: #6b7280;
   text-align: center;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: 161.023%;
+  width: 88%;
   @media (max-width: ${mobileBreakpoint}) {
     font-size: 18px;
+    width: 100%;
   }
 `;

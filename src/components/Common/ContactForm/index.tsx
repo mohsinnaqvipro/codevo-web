@@ -1,8 +1,16 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import emailjs from "@emailjs/browser";
 
 import InputField from "./InputField";
+import { useForm } from "react-hook-form";
+import {
+  ContactData,
+  emailValidationRules,
+  firstNameValidationRules,
+  lastNamenameValidationRules,
+} from "@/utils/Constants/constants";
+
 import {
   MainLayout,
   InnerLayout,
@@ -20,13 +28,6 @@ import {
   EmailInputHolder,
   MessageInputHolder,
 } from "./styles";
-import { useForm } from "react-hook-form";
-import {
-  ContactData,
-  emailValidationRules,
-  firstNameValidationRules,
-  lastNamenameValidationRules,
-} from "@/utils/Constants/constants";
 
 const ContactForm = () => {
   const {

@@ -1,86 +1,59 @@
-import PortfolioCardImage1 from "@/assets/images/PortfolioCardImage1.png";
-import PortfolioCardImage2 from "@/assets/images/PortfolioCardImage2.png";
-import PortfolioCardImage3 from "@/assets/images/PortfolioCardImage3.png";
+import fintech from "@/assets/images/fintech.png";
+import live from "@/assets/images/Live.png";
+import neeo from "@/assets/images/NEEO.png";
+import Mindcette from "@/assets/images/MINDCETTE.png";
+import edkasa from "@/assets/images/edkasa.png";
+import PortfolioCardImage4 from "@/assets/images/PortfolioCardImage4.png";
+import emplifyd from "@/assets/images/emplifyd.png";
+import chicago from "@/assets/images/chicago.jpeg";
 
 export const PortfolioCardData = [
   {
-    imageUrl: PortfolioCardImage1,
+    imageUrl: fintech,
     title: "FINTECH",
     dicription:
       "Our future-ready workforce leverages cutting-edge technologies to provide exceptional products",
   },
   {
-    imageUrl: PortfolioCardImage2,
+    imageUrl: live,
     title: "LIVE.LY",
     dicription:
       "Live.ly helps you take your streaming experience to the next level by helping you stream to different platforms",
   },
 
   {
-    imageUrl: PortfolioCardImage3,
+    imageUrl: emplifyd,
     title: "AMPLIFYD",
     dicription:
       "Amplifyd is a data driven AI powered data driven platform that connects brands and influencers strategically.    ",
   },
   {
-    imageUrl: PortfolioCardImage1,
-    title: "FINTECH",
+    imageUrl: edkasa,
+    title: "EDKASA",
     dicription:
-      "Our future-ready workforce leverages cutting-edge technologies to provide exceptional products",
+      "Edkasa is an educational app that aims to provide students with a comprehensive learning experience using technology. The app offers various features and tools to enhance the learning process and help students succeed academically.",
   },
   {
-    imageUrl: PortfolioCardImage2,
-    title: "LIVE.LY",
-    dicription:
-      "Live.ly helps you take your streaming experience to the next level by helping you stream to different platforms",
-  },
-
-  {
-    imageUrl: PortfolioCardImage3,
-    title: "AMPLIFYD",
-    dicription:
-      "Amplifyd is a data driven AI powered data driven platform that connects brands and influencers strategically.    ",
+    imageUrl: Mindcette,
+    title: "MINDCETTE",
+    dicription: "Mindcette Test for Entrepreneurs",
   },
   {
-    imageUrl: PortfolioCardImage1,
-    title: "FINTECH",
+    imageUrl: PortfolioCardImage4,
+    title: "IGLOWS",
     dicription:
-      "Our future-ready workforce leverages cutting-edge technologies to provide exceptional products",
+      "iGlows is a vendor of beauty products. Fortified with safe, gentle ingredients that promise to strengthen the hair, enhancing both volume and thickness. iGlows rapid growth lash and brow serum.",
   },
   {
-    imageUrl: PortfolioCardImage2,
-    title: "LIVE.LY",
+    imageUrl: neeo,
+    title: "NEEO MESSENGER",
     dicription:
-      "Live.ly helps you take your streaming experience to the next level by helping you stream to different platforms",
+      "Neeo Messenger is a multipurpose free chat application that caters to all new-generation communication features.",
   },
   {
-    imageUrl: PortfolioCardImage3,
-    title: "AMPLIFYD",
+    imageUrl: chicago,
+    title: "CHICAGO FURNITURE",
     dicription:
-      "Amplifyd is a data driven AI powered data driven platform that connects brands and influencers strategically.    ",
-  },
-  {
-    imageUrl: PortfolioCardImage3,
-    title: "AMPLIFYD",
-    dicription:
-      "Amplifyd is a data driven AI powered data driven platform that connects brands and influencers strategically.    ",
-  },
-  {
-    imageUrl: PortfolioCardImage1,
-    title: "FINTECH",
-    dicription:
-      "Our future-ready workforce leverages cutting-edge technologies to provide exceptional products",
-  },
-  {
-    imageUrl: PortfolioCardImage2,
-    title: "LIVE.LY",
-    dicription:
-      "Live.ly helps you take your streaming experience to the next level by helping you stream to different platforms",
-  },
-  {
-    imageUrl: PortfolioCardImage3,
-    title: "AMPLIFYD",
-    dicription:
-      "Amplifyd is a data driven AI powered data driven platform that connects brands and influencers strategically.    ",
+      "Chicago Furniture Bank: A dynamic project revolutionizing furniture transactions in Chicago, fostering affordability and sustainability. This initiative has been pivotal in reshaping the way furniture is bought and sold in the city, benefiting both consumers and the environment.",
   },
 ];

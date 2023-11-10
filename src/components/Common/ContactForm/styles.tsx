@@ -4,7 +4,7 @@ import styled from "styled-components";
 const mobileBreakpoint = "768px";
 
 export const MainLayout = styled.div`
-  padding: 6rem 14rem;
+  padding: 1rem 4rem;
   @media (max-width: ${mobileBreakpoint}) {
     padding: 2rem 0rem;
   }
@@ -16,10 +16,12 @@ export const InnerLayout = styled.div`
   padding: 1rem 2rem;
   display: flex;
   gap: 1rem;
+  margin: 0rem 12rem 5rem 12rem;
   @media (max-width: ${mobileBreakpoint}) {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    margin: 0;
   }
 `;
 
@@ -35,7 +37,7 @@ export const InfoContainer = styled.div`
 
 export const ContactUsText = styled.h1`
   color: #ffffff;
-  font-size: 42px;
+  font-size: 2.625rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -60,7 +62,7 @@ export const TextWrapper = styled.div`
 
 export const TitleInfoText = styled.p`
   color: #ffffff;
-  font-size: 0.875rem;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 600;
   line-height: 1.25rem;
@@ -68,13 +70,11 @@ export const TitleInfoText = styled.p`
 `;
 
 export const ValueInfoText = styled.p`
-  margin: 0;
   color: #ffffff;
-  font-size: 0.875rem;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 300;
   line-height: 1.25rem;
-  margin: 0;
 `;
 
 export const IconWrapper = styled.div``;

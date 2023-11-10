@@ -1,4 +1,5 @@
 "use client";
+import { useRouter } from "next/navigation";
 
 import EastIcon from "@mui/icons-material/East";
 
@@ -19,6 +20,7 @@ import {
 } from "./styles";
 
 const ViewCard = (data) => {
+  const router = useRouter();
   const { srNo, title, details } = data;
 
   return (
@@ -41,6 +43,7 @@ const ViewCard = (data) => {
           <StyleButton
             variant="contained"
             endIcon={<EastIcon />}
+            onClick={() => router.push("/portfolio")}
           >{`Explore More`}</StyleButton>
         </ButtonContainer>
       </ViewContainer>

@@ -4,6 +4,8 @@ import React from "react";
 
 import { ImageContent } from "@/utils/Constants/constants";
 
+import Stan from "@/assets/icons/stan";
+
 import {
   MainContainer,
   HeaderText,

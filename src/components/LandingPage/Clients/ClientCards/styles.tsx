@@ -26,7 +26,7 @@ export const CardContainer = styled.div`
     rgba(236, 212, 216, 0.5),
     rgba(185, 209, 253, 0.5)
   );
-  padding: 1rem 2rem;
+  padding: 2.5rem 1rem;
   width: 30%;
   @media (max-width: ${mobileBreakpoint}) {
     width: 100%;
@@ -43,22 +43,25 @@ export const ImageContainer = styled.div`
   }
 `;
 
-export const StyledImage = styled(Image)``;
+export const StyledImage = styled(Image)`
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+`;
 
 export const HeadingText = styled.h4`
   color: #12141d;
   font-size: 18px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 30px;
   letter-spacing: -0.5px;
 `;
 
 export const IntroText = styled.p`
-  color: #77808b;
+  color: #000;
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 400;
   line-height: 1.875rem;
-  text-align: center;
 `;

@@ -1,5 +1,6 @@
 import React from "react";
 
+import { useRouter } from "next/navigation";
 import LifeCycleCard from "./LifeCycleCard";
 
 import { LifeCycleData } from "@/utils/Constants/ServicesConstants";
@@ -16,12 +17,13 @@ import {
 } from "./styles";
 
 const LifeCycle = () => {
+  const router = useRouter();
   return (
     <>
       <MainLayout>
         <LifeHeading>
-          {`Our `}{" "}
-          <LifeSpam>{`Custom Software Development Lifecycle`} </LifeSpam>{" "}
+          {`Our `}
+          <LifeSpam>{`Custom Software Development Lifecycle`} </LifeSpam>
         </LifeHeading>
         <LifeText>{`We engineer custom-built software because we don’t believe in the standardized requirements. With the best practice processes and development methodologies work as a foundation for the rapid building of cutting-edge technology solutions in a structured way.`}</LifeText>
       </MainLayout>
@@ -36,7 +38,10 @@ const LifeCycle = () => {
         ))}
         <ProductContainer>
           <ProductHeading>{`Want to Build a Product?`}</ProductHeading>
-          <StyledButton variant="contained">{`Lets Talk`}</StyledButton>
+          <StyledButton
+            variant="contained"
+            onClick={() => router.push("/contactus")}
+          >{`Lets Talk`}</StyledButton>
         </ProductContainer>
       </LifeContainer>
     </>

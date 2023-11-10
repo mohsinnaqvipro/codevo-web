@@ -20,9 +20,9 @@ export const InnerLayout = styled.div`
 export const TextWrapper = styled.h1`
   display: flex;
   color: #fff;
-  font-size: 2rem;
+  font-size: 2.625rem;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
   justify-content: center;
   @media (max-width: ${mobileBreakpoint}) {
