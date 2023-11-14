@@ -22,6 +22,7 @@ export const ImageHolder = styled.div``;
 export const StyledImage = styled(Image)`
   width: 20.5rem;
   height: 14.75rem;
+  object-fit: contain;
 `;
 
 export const DetailContainer = styled.div`

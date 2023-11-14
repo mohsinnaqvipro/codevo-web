@@ -75,6 +75,7 @@ export const ImageContainer = styled.div`
 export const StyledImage = styled(Image)`
   width: 31.68894rem;
   height: 18.92606rem;
+  object-fit: contain;
   @media (max-width: ${mobileBreakpoint}) {
     width: 100%;
     height: auto;
